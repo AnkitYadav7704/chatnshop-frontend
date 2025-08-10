@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 
 const SignupPage = () => {
   const [email, setEmail] = useState('');
@@ -53,6 +53,14 @@ const SignupPage = () => {
 
         {status && <p className="text-green-600 mt-2 text-center">{status}</p>}
         {error && <p className="text-red-600 mt-2 text-center">{error}</p>}
+
+        {/* Already have an account? Login */}
+        <p className="mt-4 text-center text-gray-600">
+          Already have an account?{' '}
+          <Link to="/login" className="text-blue-600 hover:underline">
+            Login
+          </Link>
+        </p>
       </form>
     </div>
   );

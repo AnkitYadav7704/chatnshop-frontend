@@ -57,6 +57,17 @@ const LoginPage = () => {
         </button>
 
         {error && <p className="text-red-600 mt-3 text-center">{error}</p>}
+
+        {/* ✅ Sign Up Link */}
+        <p className="mt-4 text-center text-sm text-gray-600">
+          Don’t have an account?{' '}
+          <span
+            onClick={() => navigate('/signup')}
+            className="text-blue-600 hover:underline cursor-pointer"
+          >
+            Sign up
+          </span>
+        </p>
       </form>
     </div>
   );

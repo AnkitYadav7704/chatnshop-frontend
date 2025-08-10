@@ -38,12 +38,13 @@ const Dashboard = () => {
             📦 My Listings
           </Link>
 
-          <Link
-            to="/chat"
-            className="bg-purple-600 text-white px-4 py-2 rounded hover:bg-purple-700"
-          >
-            💬 Chat
-          </Link>
+          <a
+  href="https://chat-frontend-xi-drab.vercel.app/"
+  className="bg-purple-600 text-white px-4 py-2 rounded hover:bg-purple-700"
+>
+  💬 Chat
+</a>
+
 
           <Link
             to="/profile"
